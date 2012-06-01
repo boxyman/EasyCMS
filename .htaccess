@@ -1,0 +1,24 @@
+# ---- Turn off magic quotes ----
+php_flag magic_quotes_gpc Off
+
+# ---- Mod rewrite enabled ----
+RewriteEngine On
+
+# ---- www. always part of url ----
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^easycms.simpleshop\.dk$
+RewriteRule ^(.*)$ http://www.easycms.simpleshop.dk/$1 [R=301,L]
+
+# ---- Rules ----
+RewriteRule ^config\.php$ index.php [NC,L]
+RewriteRule ^([A-Za-z0-9-]+)\.html$ index.php?page=$1 [NC,L]
+RewriteRule ^([A-Za-z0-9-]+)$ index.php?page=$1 [NC,L]
+
+# ---- Password protection on administration ----
+AuthName "Administration" 
+AuthType Basic 
+AuthUserFile /var/www/easycms.simpleshop.dk/website/.htpasswd 
+AuthGroupFile /dev/null 
+<Files admin.php>
+require valid-user
+</Files>

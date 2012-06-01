@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /classes/
+Disallow: /javascript/
+Disallow: /modules/
+Disallow: /templates/
+Disallow: /uploads/
+
+allow: /

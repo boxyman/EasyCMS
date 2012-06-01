@@ -1,0 +1,83 @@
+body {
+	font-family: arial;
+	font-size: 0.8em;
+}
+h1 {
+	font-size: 2em;
+	padding-bottom: 10px;
+}
+hr {
+	margin: 20px 0 20px 0;
+}
+#wrapper {
+	width: 980px;
+	margin: 30px auto 0 auto;
+}
+#header {
+	clear:both;
+}
+#navigation {
+	float: left;
+	width: 250px;
+}
+#navigation ul {
+	clear:both;
+	margin: 0 0 15px 0;
+}
+#navigation li {
+	margin: 0 0 3px 0;
+}
+#navigation a {
+	padding: 0 10px 0 0;
+	text-decoration: none;
+	color: black;
+}
+#content {
+	float: left;
+	clear:right;
+	width: 900px;
+	margin: 0 0 30px 0;
+}
+#copyright {
+	clear:both;
+	font-size: 0.7em;
+}
+/* ----- Forms ----- */
+fieldset {
+	
+}
+legend {
+	font-size: 2em;
+	font-weight: bold;
+	padding-bottom: 25px;
+}
+fieldset ol {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+}
+fieldset li {
+	padding-bottom: 10px;
+}
+fieldset li a {
+	text-decoration: underline;
+}
+fieldset input {
+	width: 255px;
+}
+fieldset textarea {
+	width: 400px;
+	height: 50px;
+}
+fieldset.submit {
+	border-style: none;
+}
+label {
+	float: left;
+	width: 100px;
+	margin-right: 10px;
+}
+.wysiwyg {
+	width: 700px;
+	height: 500px;
+}
